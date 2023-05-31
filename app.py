@@ -6,6 +6,8 @@ import plotly.graph_objs as go
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
+server = app.server
+
 hurtos = pd.read_csv('https://drive.google.com/uc?export=download&id=1FvzVgsyJEiQGevrS1DVyPfY_88AuluQ4', dayfirst=True)
 
 app.layout = dbc.Container(
